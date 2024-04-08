@@ -15,12 +15,12 @@
             align-items: center;
           "
         >
-          <span/>
+          <span />
           <span style="font-size: 16px; text-align: center; flex-grow: 1">
             酷客 CucKer 编程代码学习系统
           </span>
           <a
-            href="/"
+            href="https://github.com/Theodorix/lxmoj-frontend"
             target="_blank"
             style="
               text-decoration: none;
