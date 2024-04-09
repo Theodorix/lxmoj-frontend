@@ -900,7 +900,7 @@
                 </div>
                 <div style="width: 136px; display: flex; color: #8a8a8e">
                   <button class="custom-but" style="justify-content: center">
-                    <span style="margin-right: 6px">题解</span>
+                    <span style="margin-right: 6px">题目提交数</span>
                     <a-space direction="vertical" :size="-11">
                       <icon-caret-up :size="12" />
                       <icon-caret-down :size="12" />
@@ -1057,7 +1057,7 @@
                               </a-space>
                             </a-space>
                           </div>
-                          <!-- 题解 -->
+                          <!-- 题目提交数 -->
                           <div
                             style="
                               width: 136px;
@@ -1066,6 +1066,7 @@
                               justify-content: center;
                             "
                           >
+                            {{ item.submitNum }}
                             <icon-player
                               size="18"
                               style="margin-left: 5px; margin-top: 2px"
@@ -1196,7 +1197,7 @@
                 width: 270px;
                 height: 152px;
                 border-radius: 10px;
-                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.125);
+                box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
               "
             >
               <!-- 当前进度 -->
@@ -2485,9 +2486,9 @@ const closeTagsList = () => {
   display: flex;
   flex-direction: column;
   width: 260px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 10px;
   padding: 5px;
 }
