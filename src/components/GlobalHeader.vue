@@ -6,7 +6,7 @@
     :wrap="false"
     style="margin-right: 50px"
   >
-    <a-col flex="6">
+    <a-col flex="8">
       <a-menu
         mode="horizontal"
         :selected-keys="selectedKeys"
@@ -34,7 +34,6 @@
       </a-menu>
     </a-col>
     <a-col flex="1"></a-col>
-    <a-col flex="2"></a-col>
     <a-col flex="2" style="display: flex; justify-content: flex-end">
       <!-- 登录按钮 和 头像 -->
       <div style="display: flex; justify-content: center; margin-left: 10px">

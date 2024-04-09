@@ -15,19 +15,14 @@ import PersonalHomePageView from "@/views/user/PersonalHomePageView.vue";
 import LearningView from "@/views/study/LearningView.vue";
 
 export const routes: Array<RouteRecordRaw> = [
-  // {
-  //   path: "/study",
-  //   name: "学习",
-  //   component: LearningView,
-  // },
   {
     path: "/",
     redirect: "/questions", // 添加重定向规则，将根路径重定向到/questions
   },
   {
-    path: "/post",
-    name: "讨论",
-    component: PostView,
+    path: "/study",
+    name: "学习",
+    component: LearningView,
   },
   {
     path: "/questions",
@@ -70,7 +65,6 @@ export const routes: Array<RouteRecordRaw> = [
       access: ACCESS_ENUM.ADMIN,
     },
   },
-  // {
   //   path: "/personal/center",
   //   name: "用户中心",
   //   component: PersonalCenterView,
@@ -97,7 +91,7 @@ export const routes: Array<RouteRecordRaw> = [
       hideInMenu: true,
     },
   },
-
+  // {
   {
     path: "/questions/:category",
     component: QuestionsView,
@@ -112,6 +106,21 @@ export const routes: Array<RouteRecordRaw> = [
     meta: {
       access: ACCESS_ENUM.ADMIN,
     },
+  },
+  {
+    path: "/contest",
+    name: "竞赛",
+    component: PostView,
+  },
+  {
+    path: "/post",
+    name: "讨论",
+    component: PostView,
+  },
+  {
+    path: "/company",
+    name: "求职",
+    component: PostView,
   },
   {
     path: "/view/question/:id/:category?/:questionSubmitId?",
